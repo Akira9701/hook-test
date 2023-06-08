@@ -29,9 +29,7 @@ const WeatherContainer = () => {
 
   return (
     <article
-      className={`weather ${
-        timeHours > 8 && timeHours < 18 ? 'weather_container_day' : 'weather_container_night'
-      }`}
+      className={`weather ${timeHours > 8 && timeHours < 18 ? 'weather_container_day' : 'weather_container_night'}`}
     >
       {weather !== null ? <WeatherItem weather={weather} /> : <div className='loader' />}
       {/* <div className='loader' /> */}

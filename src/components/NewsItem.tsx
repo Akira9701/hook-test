@@ -10,9 +10,7 @@ const NewsItem = ({ item }: { item: INewsItem }) => (
     <div className='news_item_text'>
       <p>{item.title}</p>
       <p>
-        {item.description.length <= 100
-          ? item.description.length
-          : `${item.description.substring(0, 100)}...`}
+        {item.description}
       </p>
     </div>
   </li>
