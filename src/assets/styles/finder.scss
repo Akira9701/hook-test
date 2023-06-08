@@ -1,0 +1,32 @@
+.finder_container{
+    margin-left: 40px;
+    position: relative;
+    input{
+      margin: 0;
+      padding: 8px 44px 8px 16px;
+      width: 100%;
+      box-sizing: border-box;
+      border: none;
+      outline: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      -webkit-tap-highlight-color: rgba(0,0,0,0);
+      border-radius: $br;
+      font-size: 14px;
+      line-height: 20px;
+      transition: background-color .15s linear;
+      background-color: rgba(0,0,0,0.06);
+      font-family: 'Montserrat';
+
+    }
+    label{
+        cursor: pointer;
+        width: fit-content;
+        height: fit-content;
+        margin: auto;
+        position: absolute;
+        top: 0; right: 20px; bottom: 0;
+    }
+
+  }

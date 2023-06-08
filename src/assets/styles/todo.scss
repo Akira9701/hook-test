@@ -1,0 +1,155 @@
+.todo{
+    position: sticky;
+    top: 100px;
+    background: #1A3165;
+    color: white;
+    // background: red;
+    margin-top: 16px;
+    -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    @media screen and (max-width:920px){
+        margin-top: 0px;
+        position: initial;
+    }
+    >p{
+        // line-height: 32px;
+        font-size: 24px;
+        font-weight: 500;
+        padding-bottom: 5px;
+        // border-bottom: solid 1px black;
+    }
+    .todo_completed_title{
+        margin-top: 30px;
+    }
+    ul{
+        margin-top: 10px;
+        li{
+            margin-top: 10px;
+            .container {
+
+                position: relative;
+                cursor: pointer;
+              }
+              
+              .container input {
+                position: absolute;
+                opacity: 0;
+              }
+              
+              .checkmark {
+                width: 20px;
+                height: 20px;
+                position: relative;
+                top: 0;
+                left: 0;
+                border: 2px solid #323232;
+                border-radius: 5px;
+                box-shadow: 4px 4px #323232;
+                background-color: #ccc;
+                transition: all 0.3s;
+              }
+              
+              .container.container-checked .checkmark {
+                background-color:#2d8cf0;
+              }
+              
+              .checkmark:after {
+                content: "";
+                width: 5px;
+                height: 10px;
+                position: absolute;
+                top: 2px;
+                left: 7px;
+                display: none;
+                border: solid #fff;
+                border-width: 0 2.5px 2.5px 0;
+                transform: rotate(45deg);
+              }
+              
+              .container.container-checked .checkmark:after {
+                display: block;
+              }
+            p{
+                margin-left: 20px;
+                font-size: 16px;
+                font-weight: 500;
+            }
+            display: flex;
+            align-items: center;
+            // justify-content: ;
+            button{
+                margin-left: auto;
+                width: 25px;
+                height: 25px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                z-index: 1;
+                padding: 0;
+                background: none;
+                border: none;
+                cursor: pointer;
+                svg{
+                    color: white;
+                    z-index: 2;
+                    width: 25px;
+                    height: 25px;
+                }
+            }
+        }
+        li:first-child{
+            margin-top: 0px;
+        }
+    }
+    .todo_add-wrap{
+        p{
+            font-size: 20px;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+        margin-top: 20px;
+        padding-top: 20px;
+        border-top: solid 1px white;
+        input{
+            margin: 0;
+            padding: 8px 44px 8px 16px;
+            width: 100%;
+            box-sizing: border-box;
+            border: none;
+            outline: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            -webkit-tap-highlight-color: rgba(0,0,0,0);
+            border-radius: $br;
+            font-size: 14px;
+            line-height: 20px;
+            transition: background-color .15s linear;
+            background-color: white;
+            font-family: 'Montserrat';
+        }
+        button{
+            margin-top: 10px;
+            width: 100%;
+            height: 40px;
+            border:none;
+            border-radius: $br;
+            cursor: pointer;
+            outline: none;
+            transition-duration: 0.2s;
+            font-family: 'Montserrat';
+            text-transform: uppercase;
+        }
+        button:hover{
+            color: white;
+            background: #0b255d;
+
+        }
+    }
+    .todo_completed_list{
+        p{
+            margin-left: 0;
+        }
+    }
+}

@@ -1,0 +1,80 @@
+footer{
+    background: white;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    display: flex;
+    align-items: center;
+    >p{
+        color: #999a9b;
+    }
+    .footer_nav{
+        margin-left: auto;
+        ul{
+            display: flex;
+            @media screen and (max-width:650px){
+                flex-direction: column;
+            }
+        
+            li{
+                
+                margin-left: 50px;
+                @media screen and (max-width:650px){
+                    margin-left: 0px;
+                    margin-top: 10px;
+                }
+                a{
+                    transition-duration: 0.3s;
+                    color: $gray;
+                    text-decoration: none;
+                }
+            }        
+            li:first-child{
+                margin-left: 0  ;
+                @media screen and (max-width:650px){
+                    margin-top: 0px;
+                }
+            }
+            li:hover a{
+                color: #1A3165;
+            }
+        }
+    }
+    .footer_socials{
+        margin-left: 30px;
+        display: flex;
+        @media screen and (max-width:650px){
+            flex-direction: column;
+        }
+        li{
+            transition-duration: 0.3s;
+            margin-left: 10px;
+            @media screen and (max-width:650px){
+                margin-left: 0px;
+                margin-top: 10px;
+            }
+            a{
+                color: $gray;
+                text-decoration: none;
+                svg{
+                    transition-duration: 0.2s;
+                }
+            }
+        }        
+        li:first-child{
+            margin-left: 0  ;
+            @media screen and (max-width:650px){
+                margin-top: 0px;
+            }
+        }
+
+        .footer_facebook:hover svg{
+            color: #4867AA;
+        }
+        .footer_telegram:hover svg{
+            color: #29A9EB;
+        }
+        .footer_whatsapp:hover svg{
+            color: #24CC63;
+        }
+    }
+}
